@@ -17,12 +17,12 @@
 /*Variáveis CSS*/
 /*:root*/
 :root {
-  --bg-color: #FFF;
-  --text-color: #252B42;
-  --second-text-color: #737373;
+  --bg-color: #221C35;
+  --text-color: #fff;
+  --second-text-color: #d3d3d3;
   --light-text-color: #FFF;
   --light-gray: #F8F8F8;
-  --primary-color: #3f08cd;
+  --primary-color: #ffa500;
   --secondary-color: #B2E3FF;
 
   --ff-sans: "Montserrat", system-ui, sans-serif;

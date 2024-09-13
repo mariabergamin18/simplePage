@@ -1,12 +1,12 @@
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/darklogo.svg";
 import Close from "../assets/Close.svg";
 import Menu from "../assets/Menu.svg";
 import "../styles/header.css";
 import "../styles/utility.css";
 import { useState } from "react";
 import Button from "../components/Button";
-import HeroRectangleOne from "../assets/images/rectangleOne.png";
-import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
+// import HeroRectangleOne from "../assets/images/rectangleOne.png";
+// import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
 import "../styles/hero.css";
 
 
@@ -17,7 +17,7 @@ export default function Home() {
             <header className="container py-sm">
 
                 <nav className="flex items-center justify-between">
-                    <img src={Logo} alt="Logo DonaFrost" width={220} height={80} />
+                    <img src={Logo} alt="Logo Galleon" width={220} height={80} />
                     <div className="desktop-only">
                         <ul className="flex gap-1">
                             <li>
@@ -30,12 +30,9 @@ export default function Home() {
                                 <a href="#testimonials">Depoimentos</a>
                             </li>
                             <li>
-                                <a href="#pricing">Preços</a>
-                            </li>
-                            <li>
                                 <a href="#contact">Contato</a>
                             </li>
-                                
+
                         </ul>
                     </div>
 
@@ -84,10 +81,26 @@ export default function Home() {
                 </nav>
             </header>
             <section id="hero">
-                <span className="desktop-only">
+                {/* <span className="desktop-only">
                     <img src={HeroRectangleTwo} alt="Retangulo um tela inicial" />
                 </span>
-                <img src={HeroRectangleOne} alt="Retangulo dois tela inicial" />
+                <img src={HeroRectangleOne} alt="Retangulo dois tela inicial" /> */}
+
+                <div className="container content">
+                    <p className="desktop-only">
+                        Olá
+                    </p>
+                    <h1>Gerencie seus projetos<br/> em um só lugar</h1>
+                    <p>A comunidade que reúne os melhores projetos da sua Universidade. <br/>Chega de sofrer encontrando colegas de time!
+                    </p>
+                    <div className="flex gap-1">
+                        <span><Button text="Cadastre-se" /></span>
+                        <span className="desktop-only">
+                            <Button text="Veja mais" secondary />
+                        </span>
+                    </div>
+                </div>
+
 
             </section>
         </>
