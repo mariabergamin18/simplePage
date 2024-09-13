@@ -58,9 +58,6 @@ export default function Home() {
                                             <a href="#testimonials">Depoimentos</a>
                                         </li>
                                         <li>
-                                            <a href="#pricing">Preços</a>
-                                        </li>
-                                        <li>
                                             <a href="#contact">Contato</a>
                                         </li>
                                     </ul>

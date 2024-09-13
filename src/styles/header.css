@@ -25,7 +25,8 @@
     padding-top: 2.25rem;
     width: 100vw;
     height: 100vh;
-    background: var(--bg-color);
+    background: #221C35;
+    /* var(--bg-color); */
   }
   
   .mobile-menu-content ul {
