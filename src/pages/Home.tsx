@@ -84,9 +84,6 @@ export default function Home() {
                 <img src={HeroRectangleOne} alt="Retangulo dois tela inicial" /> */}
 
                 <div className="container content">
-                    <p className="desktop-only">
-                        Olá
-                    </p>
                     <h1>Gerencie seus projetos<br/> em um só lugar</h1>
                     <p>A comunidade que reúne os melhores projetos da sua Universidade. <br/>Chega de sofrer encontrando colegas de time!
                     </p>
