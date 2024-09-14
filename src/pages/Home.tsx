@@ -7,6 +7,7 @@ import { useState } from "react";
 import Button from "../components/Button";
 // import HeroRectangleOne from "../assets/images/rectangleOne.png";
 // import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
+import Prototype from "../assets/images/prototype.png";
 import "../styles/hero.css";
 
 
@@ -84,8 +85,8 @@ export default function Home() {
                 <img src={HeroRectangleOne} alt="Retangulo dois tela inicial" /> */}
 
                 <div className="container content">
-                    <h1>Gerencie seus projetos<br/> em um só lugar</h1>
-                    <p>A comunidade que reúne os melhores projetos da sua Universidade. <br/>Chega de sofrer encontrando colegas de time!
+                    <h1>Gerencie seus projetos<br /> em um só lugar</h1>
+                    <p>A comunidade que reúne os melhores projetos da sua Universidade. <br />Chega de sofrer encontrando colegas de time!
                     </p>
                     <div className="flex gap-1">
                         <span><Button text="Cadastre-se" /></span>
@@ -96,6 +97,12 @@ export default function Home() {
                 </div>
 
 
+            </section>
+
+            <section id="solutions">
+                 <span>
+                 <img src={Prototype} alt="imagem mostrando o protótipo escrito 'galleon /br encontre seu projeto'" />
+                </span>
             </section>
         </>
     )
