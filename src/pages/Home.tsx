@@ -100,7 +100,7 @@ export default function Home() {
             </section>
 
             <section id="solutions">
-                 <span>
+                 <span className="solutionsImg">
                  <img src={Prototype} alt="imagem mostrando o protótipo escrito 'galleon /br encontre seu projeto'" />
                 </span>
             </section>
