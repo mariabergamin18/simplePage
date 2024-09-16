@@ -1,9 +1,12 @@
 import Logo from "../assets/darklogo.svg";
 import Close from "../assets/Close.svg";
 import Menu from "../assets/Menu.svg";
+import App1 from "../assets/images/googleplay.png";
+import App2 from "../assets/images/app-store.png";
 import "../styles/header.css";
 import "../styles/utility.css";
-import { useState } from "react";
+import "../styles/section.css"
+import { useEffect, useState } from "react";
 import Button from "../components/Button";
 // import HeroRectangleOne from "../assets/images/rectangleOne.png";
 // import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
@@ -13,6 +16,15 @@ import "../styles/hero.css";
 
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+    useEffect(() => {
+        if (showMobileMenu) {
+            document.documentElement.style.overflowY = "hidden";
+        } else {
+            document.documentElement.style.overflowY = "auto";
+        }
+    }, [showMobileMenu]);
+
     return (
         <>
             <header className="container py-sm">
@@ -78,6 +90,7 @@ export default function Home() {
 
                 </nav>
             </header>
+
             <section id="hero">
                 {/* <span className="desktop-only">
                     <img src={HeroRectangleTwo} alt="Retangulo um tela inicial" />
@@ -95,15 +108,56 @@ export default function Home() {
                         </span>
                     </div>
                 </div>
-
-
             </section>
+
+            <div className="content-divider">
+                <svg height="100" width="1.5">
+                    <rect width="1.5" height="100" style={{ fill: "white" }} />
+                </svg>
+            </div>
 
             <section id="solutions">
-                 <span>
-                 <img src={Prototype} alt="imagem mostrando o protótipo escrito 'galleon /br encontre seu projeto'" />
+                <span>
+                    <img src={Prototype} alt="imagem mostrando o protótipo escrito 'galleon /br encontre seu projeto'" className="prototype-image" />
                 </span>
+                <div className="solution-content">
+                    <h2>Galleon</h2>
+                    <br></br>
+                    <h4>Conectando Alunos, Projetos e Oportunidades</h4>
+                    <br></br>
+                    <p>A melhor comunidade focada em projetos para sua universidade.
+                        Encontre uma equipe ou junte-se a uma, e trabalhem juntos para um futuro melhor.</p>
+                    <p className="bold-p">Seja parte da mudança. Conecte-se. Colabore. Transforme.</p>
+                    <br></br>
+
+                    <div className="small-images">
+                        <img src={App1} alt="Imagem pequena 1" className="small-image" />
+                        <img src={App2} alt="Imagem pequena 2" className="small-image" />
+                    </div>
+                </div>
             </section>
+
+            <section className="aligned-text">
+                <div>
+                    <h3>Encontre Projetos e Equipes</h3>
+                    <p>Pesquise por projetos acadêmicos ou extracurriculares que precisam de novas ideias e contribuições.
+                        <br></br>
+                        Conecte-se com equipes que buscam por integrantes com suas habilidades.</p>
+
+                    <br></br>
+                    <br></br>
+                    <h3>Divulgue Seus Projetos</h3>
+                    <p>Crie visibilidade para seus projetos e recrute colegas com o mesmo interesse.</p>
+
+                    <br></br>
+                    <br></br>
+                    <h3>Networking Inteligente</h3>
+                    <p>Facilite conexões dentro e fora do seu curso, tornando a colaboração entre estudantes mais dinâmica.</p>
+                </div>
+            </section>
+
+
+
         </>
     )
 }

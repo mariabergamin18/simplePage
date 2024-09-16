@@ -1,4 +1,8 @@
 /* funcionamento da tag a*/
+
+a {
+  font-weight: 500;
+}
 .reverse-color {
     color: var(--primary-color);
   }

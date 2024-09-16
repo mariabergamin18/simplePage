@@ -3,6 +3,7 @@
     border-top: 0.125rem solid #e4e4e4;
     height: 90vh;
     display: flex;
+    margin-bottom: 0%;
 }
 
 #hero > img {
@@ -13,7 +14,7 @@
 }
 
 #hero p {
-    color: var(--second-text-color);
+    color: var(--text-color);
   }
 
 
@@ -66,7 +67,7 @@
         
         .content p:first-of-type {
             color: var(--primary-color);
-            font-weight: var(--fw-bold);
+            font-weight: var(--fw-base);
         }
     }
 }        
