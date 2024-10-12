@@ -1,6 +1,8 @@
 import Logo from "../assets/darklogo.svg";
 import Close from "../assets/Close.svg";
 import Menu from "../assets/Menu.svg";
+import Star from "../assets/images/star.svg";
+import StarOverline from "../assets/images/starOverline.svg";
 import App1 from "../assets/images/googleplay.png";
 import App2 from "../assets/images/app-store.png";
 import "../styles/header.css";
@@ -156,6 +158,41 @@ export default function Home() {
                 </div>
             </section>
 
+            <section id="testimonials">
+                <header>
+                    <span>
+                        <p className="desktop-only">Conselho de quem conhece</p>
+                        <h2>Cada cliente importa!</h2>
+                    </span>
+                    <p>
+                    Quem já pediu sabe da qualidade das nossas receitas, estamos tirando aquela ideia de que
+                    comida congelada tem de ser algo sem gosto, acompanhe abaixo os testemunhos de quem já comprou e aprovou.
+                    </p>
+                </header>
+                <div className="carousel">
+                    <div className="carousel-content">
+                        <div className="testimony-card">
+                            <img src="" alt="Foto perfil cliente"></img>
+                            <p>
+                            Certamente o mercado chinês de eletricos está bombando, só existe
+                            uma coisa melhor do que isso, provar uma boa comida DonaFrost no almoço.
+                            </p>
+                            <span>
+                                <img src={Star} alt="Estrela preenchida" width={22} height={20}></img>
+                                <img src={Star} alt="Estrela preenchida" width={22} height={20}></img>
+                                <img src={Star} alt="Estrela preenchida" width={20} height={20}></img>
+                                <img src={Star} alt="Estrela preenchida" width={22} height={20}></img>
+                                <img src={StarOverline} alt="Estrela vazada" width={20} height={22}></img>
+                            </span>
+                            <span>
+                                <p>Ellon Ma</p>
+                                <p>CEO BING CHILLING</p>
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
         </>
